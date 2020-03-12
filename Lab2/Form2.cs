@@ -10,14 +10,30 @@ using System.Windows.Forms;
 
 namespace Lab2
 {
-    public partial class Form2 : Form
+    public partial class SettingsForm : Form
     {
-        public Form2()
+     
+        public SettingsForm(mainForm f)
         {
             InitializeComponent();
+            string[] DBNameArr = f.DBName.Split('=');
+            dBNameTextBox.Text = DBNameArr[1];
+            string[] ServerNameArr = f.ServerName.Split('=');
+            serverNameTextBox.Text = ServerNameArr[1];
+        }
+        
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            SettingsForm settingsForm = (SettingsForm)Application.OpenForms["SettingsForm"];
+            settingsForm.Close();
+        }
+
+        private void aBNameLabel_Click(object sender, EventArgs e)
         {
 
         }

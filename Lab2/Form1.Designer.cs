@@ -1,6 +1,6 @@
 ﻿namespace Lab2
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -36,9 +36,10 @@
             // 
             // connectButton
             // 
-            this.connectButton.Location = new System.Drawing.Point(3, 19);
+            this.connectButton.Location = new System.Drawing.Point(4, 23);
+            this.connectButton.Margin = new System.Windows.Forms.Padding(4);
             this.connectButton.Name = "connectButton";
-            this.connectButton.Size = new System.Drawing.Size(204, 44);
+            this.connectButton.Size = new System.Drawing.Size(272, 54);
             this.connectButton.TabIndex = 0;
             this.connectButton.Text = "Подключить";
             this.connectButton.UseVisualStyleBackColor = true;
@@ -48,29 +49,32 @@
             // 
             this.panel1.Controls.Add(this.settingButton);
             this.panel1.Controls.Add(this.connectButton);
-            this.panel1.Location = new System.Drawing.Point(12, 248);
+            this.panel1.Location = new System.Drawing.Point(16, 305);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(422, 81);
+            this.panel1.Size = new System.Drawing.Size(563, 100);
             this.panel1.TabIndex = 1;
             // 
             // settingButton
             // 
-            this.settingButton.Location = new System.Drawing.Point(213, 19);
+            this.settingButton.Location = new System.Drawing.Point(284, 23);
+            this.settingButton.Margin = new System.Windows.Forms.Padding(4);
             this.settingButton.Name = "settingButton";
-            this.settingButton.Size = new System.Drawing.Size(204, 44);
+            this.settingButton.Size = new System.Drawing.Size(272, 54);
             this.settingButton.TabIndex = 2;
             this.settingButton.Text = "Настройка соединения";
             this.settingButton.UseVisualStyleBackColor = true;
             this.settingButton.Click += new System.EventHandler(this.settingButton_Click);
             // 
-            // Form1
+            // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "mainForm";
+            this.Text = "mainForm";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
